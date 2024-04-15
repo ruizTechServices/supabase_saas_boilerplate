@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { createClient } from '@/utils/supabase/server'
+import { createClient } from '../lib/supabase/client'
 import { cookies } from 'next/headers'
 
 export default function Home() {
   const cookieStore = cookies()
   const supabase = createClient(cookieStore)
 
-  const { data: todos } = await supabase.from('todos').select()
+  const { data: todos } = supabase.from('todos').select()
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
   <h1 className="m-10 text-2xl md:text-6xl text-center font-bold">
