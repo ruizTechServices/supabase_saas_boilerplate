@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#Supabase, NextJS, TailwindCSS, ShadCN, GPT-4 API, Stripe Payments API, & Pinecone
+##Boilerplate...
+###
 
-## Getting Started
 
-First, run the development server:
+#Supabase, TailwindCSS, NextJS, ShadCN, GPT-4 api, Stripe, & Pinecone boilerplate for busy devs...
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+###.
+###I, Luis, tend to frequently use this stack together often, so, I decided to curate this specific boilerplate to not continue constantly
+remaking the wheel. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##Prerequisites
+###Of course, we all know we need our api keys from each of the respective apis. We would also need to install all the packages. But, of course, 
+this is enabled with NPM, we can just run `npm i` in the terminal after cloning this repo. 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+##After install
+###After install, make sure you fill in the information in the `.env.local` file. First, copy the `.env.local example` file and create a new one as a `.env.local` file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+##More INFO coming soon...
