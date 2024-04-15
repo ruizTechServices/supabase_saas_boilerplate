@@ -1,4 +1,4 @@
-
+//C:\Users\NEWOWNER\local_only\local_ruiztechservices\templates\SaasFrameworks\supabase_saas_boilerplate\src\lib\supabase\client.ts
 import { createBrowserClient } from "@supabase/ssr";
 
 export const createClient = () =>
