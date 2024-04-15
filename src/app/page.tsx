@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { createClient } from '@/utils/supabase/server'
+import { cookies } from 'next/headers'
 
 export default function Home() {
+  const cookieStore = cookies()
+  const supabase = createClient(cookieStore)
+
+  const { data: todos } = await supabase.from('todos').select()
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
   <h1 className="m-10 text-2xl md:text-6xl text-center font-bold">
@@ -65,6 +71,13 @@ export default function Home() {
       </ol>
       <p>Enjoy building your SaaS product with this powerful boilerplate!</p>
     </div>
+  </div>
+  <div className="border flex flex-col items-center justify-center space-y-8 m-10">
+  <ul>
+      {todos?.map((todo) => (
+        <li>{todo}</li>
+      ))}
+    </ul>
   </div>
 </main>
 
